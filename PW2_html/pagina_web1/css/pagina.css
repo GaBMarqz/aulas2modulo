@@ -5,15 +5,20 @@ body{
 h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
+    text-decoration-line: underline;
 }
 
 li{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    font-size: 20px;
 }
 
 table{
     border: 3px solid;
     background-color: dodgerblue;
+    margin-left: 40%;
+    margin-top: 2%;
 }
 
 th{
@@ -29,6 +34,15 @@ td{
 }
 
 img{
-    height: 60px;
-    width: 60px;
+    height: 100px;
+    width: 100px;
+    margin-left: 19.5%;
+}
+
+ol{
+    place-items: center;
+}
+
+ul{
+    place-items: center;
 }
