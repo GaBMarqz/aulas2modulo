@@ -11,25 +11,33 @@
         //Para diminuir o tamanho do codigo
         function cadastrar(){
             const nome = document.getElementById('nome').value
+            const idade = document.getElementById('idade').value
+            const rg = document.getElementById('rg').value
+            const uf = document.getElementById('uf').value
             const cpf = document.getElementById('cpf').value
+            const cep = document.getElementById('cep').value
             const email = document.getElementById('email').value
             const senha = document.getElementById('senha').value
 
-            console.log(nome + cpf + email + senha)
-            resultado.innerHTML = nome + cpf + email + senha
+            console.log(nome + cpf + email + senha + cep + rg + idade + uf)
+            resultado.innerHTML = nome + cpf + email + senha + cep + rg + idade + uf
         }
     </script>
 
 <body>
 
-    <h1>Tela de cadastro</h1>
+    <h1>Cadastro</h1>
 
-    Nome  <input type="text" id="nome" /><br />
+    Nome  <input type="text" id="nome" />
+    Idade <input type="text" id="idade" /><br />
+    RG    <input type="text" id="rg" />
     CPF   <input type="text" id="cpf" /><br />
-    Email <input type="text" id="email" /><br />
-    Senha <input type="text" id="senha" /><br />
-    <input type="button" onclick="cadastrar()" value="enviar">
-        
+    CEP <input type="text" id="cep" />
+    UF <input type="text" id="uf" /><br />
+    Email <input type="text" id="email" />
+    Senha <input type="password" id="senha" /><br />
+    <input type="button" onclick="cadastrar()" value="enviar" id="btn">
+    
 
 </body>
 </html>
