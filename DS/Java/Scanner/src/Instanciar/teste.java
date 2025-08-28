@@ -8,6 +8,9 @@ public static void main(String[] args) {
 
     calc.dados();
     calc.somar();
+    calc.subtrair();
+    calc.multiplicar();
+    calc.dividir();
 
 }
 }
