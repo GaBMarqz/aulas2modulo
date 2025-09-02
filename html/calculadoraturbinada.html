@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Turbinada</title>
+    <link rel="stylesheet" href="css/calculadoraturbinada.css">
+    <script>
+        function somar(){
+            const n1 = document.getElementById('n1').value
+            const n2 = document.getElementById('n2').value
+            const soma = Number(n1) + Number(n2)
+            console.log("O Resultado será: " + soma)
+            resultado.innerHTML = "O Resultado será: " + soma;
+        }
+            function subtrair(){
+            const n1 = document.getElementById('n1').value
+            const n2 = document.getElementById('n2').value
+            const subtrai = Number(n1) - Number(n2)
+            console.log("O Resultado será: " + subtrai)
+            resultado.innerHTML = "O Resultado será: " + subtrai;
+        }
+
+        function multiplicar(){
+            const n1 = document.getElementById('n1').value
+            const n2 = document.getElementById('n2').value
+            const multiplica = Number(n1) * Number(n2)
+            console.log("O Resultado será: " + multiplica)
+            resultado.innerHTML = "O Resultado será: " + multiplica;
+        }
+
+        function dividir(){
+            const n1 = document.getElementById('n1').value
+            const n2 = document.getElementById('n2').value
+            const dividi = Number(n1) / Number(n2)
+            console.log("O Resultado será: " + dividi)
+            resultado.innerHTML = "O Resultado será: " + dividi;
+        }
+
+        function limpar(){
+            document.getElementById('n1').value="";
+            document.getElementById('n2').value="";
+            
+        }
+    </script>
+</head>
+
+<body>
+    <header> Calculadora</header>
+    <form action="">
+        Número 1 <input type="text" id="n1"/><br> 
+        Número 2 <input type="text" id="n2"/><br>
+        
+        <input type="button" value="somar" onclick="somar()"></input>
+        <input type="button" value="subtrair" onclick="subtrair()"></input>
+        <input type="button" value="multiplicar" onclick="multiplicar()"></input>
+        <input type="button" value="dividir" onclick="dividir()"></input>
+        <input type="button" value="limpar" onclick="limpar()"></input>
+        <h1 id="resultado">O Resultado será: </h1>
+    </form>
+</body>
+</html>
